@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header TextView -->
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To update search a house by name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- House Name -->
+    <EditText
+        android:id="@+id/edit_house_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="House Name" />
+
+    <!-- Location -->
+    <EditText
+        android:id="@+id/edit_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:inputType="text" />
+
+    <!-- Total Room -->
+    <EditText
+        android:id="@+id/edit_total_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Room"
+        android:inputType="number" />
+
+    <!-- Rent Amount -->
+    <EditText
+        android:id="@+id/edit_rent_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rent Amount"
+        android:inputType="numberDecimal" />
+
+    <!-- House ID -->
+    <TextView
+        android:id="@+id/text_house_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="House Id"
+        android:padding="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:enabled="false" />
+
+    <!-- House Image -->
+    <ImageView
+        android:id="@+id/image_view_house"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp" />
+
+    <!-- Select Image Button -->
+    <Button
+        android:id="@+id/button_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:layout_marginTop="16dp" />
+
+    <!-- Horizontal layout for Search and Update buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:weightSum="2">
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="Search" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/button_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E01F61"
+            android:text="Update" />
+    </LinearLayout>
+
+</LinearLayout>
